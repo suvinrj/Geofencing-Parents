@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "252959021740",
+    "project_id": "geofencing-parent",
+    "storage_bucket": "geofencing-parent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252959021740:android:c7895db603a0f9f17b1d09",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app_testing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252959021740-ubru54f8erkig3fi86a1nqjk7gnsfbo2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSqxnRq62a4RbeQMR2z8RrCuqClX12OFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252959021740-ubru54f8erkig3fi86a1nqjk7gnsfbo2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
