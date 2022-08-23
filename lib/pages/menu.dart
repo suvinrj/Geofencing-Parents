@@ -174,10 +174,12 @@ class MenuPage extends StatelessWidget {
                                 size: 50,
                                 color: Colors.white,
                               ),
-                              Text(
-                                "Locate Student",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 30),
+                              Expanded(
+                                child: Text(
+                                  "Locate Student",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 30),
+                                ),
                               )
                             ],
                           ),
