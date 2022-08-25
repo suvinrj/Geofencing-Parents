@@ -27,9 +27,11 @@ class MenuPage extends StatelessWidget {
       body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.max,
             children: [
-              SizedBox(height: 50),
+              Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(24, 16, 24, 0),
+                  child: SizedBox(height: 50)),
               Text.rich(
                   TextSpan(
                       text: 'Welcome,',
@@ -158,33 +160,38 @@ class MenuPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    InkWell(
-                      onTap: () {},
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Colors.purple,
-                        ),
-                        child: ClipRect(
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(
-                                Icons.location_on_outlined,
-                                size: 50,
-                                color: Colors.white,
-                              ),
-                              Expanded(
-                                child: Text(
+
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        InkWell(
+                          onTap: () {},
+                          child: Container(
+                              width: 335,
+                              height: 150,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.purple,
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(
+                                  Icons.location_on_outlined,
+                                  size: 50,
+                                  color: Colors.white,
+                                ),
+                                Text(
                                   "Locate Student",
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 30),
-                                ),
-                              )
-                            ],
+                                )
+                              ],
+                            ),
                           ),
                         ),
-                      ),
+                      ],
                     ),
                   ],
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
